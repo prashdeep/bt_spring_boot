@@ -4,9 +4,11 @@ import com.bt.domain.Merchant;
 import com.bt.payment.AmazonPay;
 import com.bt.payment.Payment;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = "com.bt")
 public class ApplicationConfiguration {
 
     @Bean
