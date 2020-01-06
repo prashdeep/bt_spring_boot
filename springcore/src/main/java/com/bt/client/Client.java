@@ -18,6 +18,7 @@ public class Client {
        // merchant.transaction("Kishore", "Vinay", 2000);
 
         System.out.println(merchant1 == merchant2);
+        System.out.println(merchant1.getAddresses());
 
         AbstractApplicationContext abstractApplicationContext = (AbstractApplicationContext) applicationContext;
 

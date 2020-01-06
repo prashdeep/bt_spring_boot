@@ -1,5 +1,8 @@
 package com.bt.payment;
 
+import org.springframework.stereotype.Component;
+
+@Component("amazonPay")
 public class AmazonPay implements Payment {
 
     public void initialize(){

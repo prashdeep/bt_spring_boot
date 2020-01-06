@@ -1,5 +1,8 @@
 package com.bt.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CorporateCustomer extends Customer {
 
     @Override

@@ -2,20 +2,25 @@ package com.bt.domain;
 
 import com.bt.payment.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class Merchant {
 
 
     private Payment payment;
 
+    @Value("Reliance Digital")
     private String name;
 
+    @Value("20AOYPP6788M")
     private String gstNumber;
 
-    @Autowired
-    public Merchant(  Payment payment){
+    public Merchant( @Qualifier("amazonPay") Payment payment){
         this.payment = payment;
     }
 
