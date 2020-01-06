@@ -3,13 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="customer" class="com.bt.domain.Customer">
+    <bean id="merchant" class="com.bt.domain.Merchant">
 
         <constructor-arg name="payment" ref="paytm"/>
 
         <property name="name" value="Reliance Digital"/>
 
         <property name="gstNumber" value="20AOYPP6788M" />
+
+        <property name="addresses">
+            <list>
+                <value>Bangalore</value>
+                <value>Chennai</value>
+                <value>Delhi</value>
+                <value>Mumbai</value>
+            </list>
+        </property>
     </bean>
 
 </beans>
