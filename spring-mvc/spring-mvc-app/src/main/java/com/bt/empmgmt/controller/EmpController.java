@@ -46,6 +46,6 @@ public class EmpController {
 
     @PutMapping("/{empId}")
     public String updateEmployee(@PathVariable("empId") long empId, @RequestBody Employee employee){
-        return null;
+        return "success";
     }
 }
