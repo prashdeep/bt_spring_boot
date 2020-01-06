@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -20,7 +21,7 @@ public class EmpController {
     }
 
     @PostMapping("/")
-    public String saveEmployee(@RequestBody Employee employee){
+    public String saveEmployee( @Valid @RequestBody Employee employee){
        return "success";
     }
 
@@ -45,7 +46,7 @@ public class EmpController {
     }
 
     @PutMapping("/{empId}")
-    public String updateEmployee(@PathVariable("empId") long empId, @RequestBody Employee employee){
-        return null;
+    public String updateEmployee(@PathVariable("empId") long empId, @Valid @RequestBody Employee employee){
+        return "success";
     }
 }

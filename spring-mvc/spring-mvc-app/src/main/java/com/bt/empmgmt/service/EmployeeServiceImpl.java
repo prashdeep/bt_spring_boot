@@ -18,12 +18,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee saveEmployee(Employee employee) {
-        return null;
+        return this.employeeDAO.saveEmployee(employee);
     }
 
     @Override
     public List<Employee> listAll() {
-        return null;
+        return this.employeeDAO.listAll();
     }
 
     @Override
@@ -33,11 +33,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void deleteEmployeeById(long empId) {
-
+        this.employeeDAO.deleteEmployeeById(empId);
     }
 
     @Override
     public Employee updateEmployee(long empId, Employee employee) {
-        return null;
+        return this.employeeDAO.updateEmployee(empId, employee);
     }
 }
