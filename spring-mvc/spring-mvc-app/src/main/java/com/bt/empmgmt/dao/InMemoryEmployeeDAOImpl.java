@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Repository
 public class InMemoryEmployeeDAOImpl implements EmployeeDAO {
@@ -14,6 +15,7 @@ public class InMemoryEmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public Employee saveEmployee(Employee employee) {
+        employee.setEmpId(UUID.randomUUID().timestamp());
         this.employeeList.add(employee);
         return employee;
     }

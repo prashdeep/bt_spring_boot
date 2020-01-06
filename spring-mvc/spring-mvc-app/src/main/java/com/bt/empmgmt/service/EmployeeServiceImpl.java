@@ -27,8 +27,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Optional<Employee> findById(long empId) {
-        return Optional.empty();
+    public Employee findById(long empId) {
+        return this.employeeDAO.findById(empId).orElseThrow(()-> new IllegalArgumentException("Employee Not Found"));
     }
 
     @Override

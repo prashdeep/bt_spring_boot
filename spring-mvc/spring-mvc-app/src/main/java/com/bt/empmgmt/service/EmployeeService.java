@@ -11,7 +11,7 @@ public interface EmployeeService {
 
     List<Employee> listAll();
 
-    Optional<Employee> findById(long empId);
+    Employee findById(long empId);
 
     void deleteEmployeeById(long empId);
 
