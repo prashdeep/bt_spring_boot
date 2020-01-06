@@ -6,7 +6,7 @@
 
     <import resource="customers-config.xml" />
 
-    <bean id="amazonPay" class="com.bt.payment.AmazonPay" />
+    <bean id="amazonPay" class="com.bt.payment.AmazonPay" init-method="initialize" destroy-method="tearDown"/>
 
     <bean id="googlePay" class="com.bt.payment.GooglePay" />
 

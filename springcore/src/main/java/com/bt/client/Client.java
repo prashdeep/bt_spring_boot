@@ -2,6 +2,7 @@ package com.bt.client;
 
 import com.bt.domain.Merchant;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Client {
@@ -12,9 +13,16 @@ public class Client {
          // Payment payment = new AmazonPay();
 
         //load the payment object from the context
-        Merchant merchant = applicationContext.getBean("merchant", Merchant.class);
+        Merchant merchant1 = applicationContext.getBean("merchant", Merchant.class);
+        Merchant merchant2 = applicationContext.getBean("merchant", Merchant.class);
        // merchant.transaction("Kishore", "Vinay", 2000);
 
-        merchant.getAddresses().forEach(System.out::println);
+        System.out.println(merchant1 == merchant2);
+
+        AbstractApplicationContext abstractApplicationContext = (AbstractApplicationContext) applicationContext;
+
+        abstractApplicationContext.registerShutdownHook();
+
+        //  merchant.getAddresses().forEach(System.out::println);
     }
 }

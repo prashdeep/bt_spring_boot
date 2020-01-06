@@ -24,7 +24,7 @@
     <bean id="customer" class="com.bt.domain.Customer" abstract="true"/>
 
     <bean id="retailCustomer" class="com.bt.domain.RetailCustomer"  parent="customer"/>
-    
+
     <bean id="corporateCustomer" class="com.bt.domain.CorporateCustomer" parent="customer"/>
 
 </beans>
