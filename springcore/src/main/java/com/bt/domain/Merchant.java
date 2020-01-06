@@ -1,16 +1,22 @@
 package com.bt.domain;
 
 import com.bt.payment.Payment;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class Merchant {
 
+    @Autowired
     private Payment payment;
 
     private String name;
 
     private String gstNumber;
+
+    public Merchant( @Autowired Payment payment){
+        this.payment = payment;
+    }
 
     public List<String> getAddresses() {
         return addresses;
@@ -44,10 +50,6 @@ public class Merchant {
 
     public void setGstNumber(String gstNumber) {
         this.gstNumber = gstNumber;
-    }
-
-    public Merchant(Payment payment){
-        this.payment = payment;
     }
 
     public void transaction(String from, String to, double amount){
