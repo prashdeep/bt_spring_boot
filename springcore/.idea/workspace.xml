@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f764bcac-ba8f-4f1a-9505-eda5ec9886f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/domain/CorporateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/domain/CorporateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/domain/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/domain/Merchant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/domain/RetailCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/domain/RetailCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/payment/AmazonPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/payment/AmazonPay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/payment/GooglePay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/payment/GooglePay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/payment/PaytmPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/payment/PaytmPay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-configuration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/customers-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customers-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bt/client/AnnotationConfigurationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bt/config/ApplicationConfiguration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,13 +24,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="22" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1280" />
+          <entry key="JAVA" value="1564" />
           <entry key="XML" value="334" />
         </counts>
       </usages-collector>
@@ -63,11 +56,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/customers-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="297">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/config/ApplicationConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/client/AnnotationConfigurationClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -93,24 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/domain/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/domain/CorporateCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -190,6 +188,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/customers-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/domain/Merchant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/payment/AmazonPay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bt/config/ApplicationConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bt/client/AnnotationConfigurationClient.java" />
       </list>
     </option>
   </component>
@@ -268,7 +268,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bt" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcore" type="b2602c69:ProjectViewProjectNode" />
@@ -297,7 +297,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578295520575" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578301217627" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/bt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -320,9 +320,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AnnotationConfigurationClient">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnnotationConfigurationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bt.client.AnnotationConfigurationClient" />
+      <module name="springcore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bt.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -370,8 +384,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.AnnotationConfigurationClient" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnnotationConfigurationClient" />
         <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
@@ -386,19 +405,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578286577620</updated>
-      <workItem from="1578286582317" duration="9159000" />
+      <workItem from="1578286582317" duration="10414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9159000" />
+    <option name="totallyTimeSpent" value="10414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.30765086" />
+      <window_info content_ui="combo" id="Project" weight="0.30765086" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -602,8 +621,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/customers-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="297">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/config/ApplicationConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/client/AnnotationConfigurationClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
