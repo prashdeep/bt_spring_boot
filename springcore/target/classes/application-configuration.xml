@@ -4,15 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <import resource="customers-config.xml" />
+
     <bean id="amazonPay" class="com.bt.payment.AmazonPay" />
 
     <bean id="googlePay" class="com.bt.payment.GooglePay" />
 
     <bean id="paytm" class="com.bt.payment.PaytmPay" />
 
-    <bean id="customer" class="com.bt.domain.Customer">
-        <constructor-arg name="payment" ref="paytm"/>
-    </bean>
+
 
 
 
