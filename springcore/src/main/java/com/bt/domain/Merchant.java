@@ -7,14 +7,15 @@ import java.util.List;
 
 public class Merchant {
 
-    @Autowired
+
     private Payment payment;
 
     private String name;
 
     private String gstNumber;
 
-    public Merchant( @Autowired Payment payment){
+    @Autowired
+    public Merchant(  Payment payment){
         this.payment = payment;
     }
 
