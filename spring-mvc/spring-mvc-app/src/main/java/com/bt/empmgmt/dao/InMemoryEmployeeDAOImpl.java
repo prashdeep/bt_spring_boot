@@ -3,15 +3,18 @@ package com.bt.empmgmt.dao;
 import com.bt.empmgmt.model.Employee;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Repository
 public class InMemoryEmployeeDAOImpl implements EmployeeDAO {
 
-    private List<Employee> employeeList = new ArrayList<>();
+    private List<Employee> employeeList = Arrays.asList(
+            Employee.builder()
+                    .empId(12)
+                    .empDept("HR")
+                    .empName("Kashi")
+                    .salary(20000)
+                    .build());
 
     @Override
     public Employee saveEmployee(Employee employee) {

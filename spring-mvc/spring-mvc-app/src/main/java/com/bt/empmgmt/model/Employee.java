@@ -11,6 +11,8 @@ import java.io.Serializable;
 @EqualsAndHashCode(of = "empId")
 @ToString
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class Employee implements Serializable, Comparable<Employee> {
 
     private long empId;
