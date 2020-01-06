@@ -1,14 +1,26 @@
 package com.bt.empmgmt.model;
 
-public class Employee {
+import lombok.*;
+
+import java.io.Serializable;
+
+@Getter
+@Setter
+@EqualsAndHashCode(of = "empId")
+@ToString
+@NoArgsConstructor
+public class Employee implements Serializable, Comparable<Employee> {
 
     private long empId;
 
-    public long getEmpId() {
-        return empId;
-    }
+    private String empName;
 
-    public void setEmpId(long empId) {
-        this.empId = empId;
+    private String empDept;
+
+    private double salary;
+
+    @Override
+    public int compareTo(Employee employee) {
+        return (int)(this.empId - employee.empId );
     }
 }
