@@ -4,12 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="amazonPay" class="com.bt.payment.AmazonPay" />
-
-    <bean id="googlePay" class="com.bt.payment.GooglePay" />
-
-    <bean id="paytm" class="com.bt.payment.PaytmPay" />
-
-
 
 </beans>
