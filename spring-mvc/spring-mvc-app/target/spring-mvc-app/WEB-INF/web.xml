@@ -16,5 +16,10 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+    <context-param>
+        <param-name>spring.active.profile</param-name>
+        <param-value>dev</param-value>
+    </context-param>
+
 
 </web-app>

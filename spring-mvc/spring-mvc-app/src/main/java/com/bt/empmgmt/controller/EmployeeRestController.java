@@ -2,6 +2,7 @@ package com.bt.empmgmt.controller;
 
 import com.bt.empmgmt.model.Employee;
 import com.bt.empmgmt.service.EmployeeService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
@@ -26,6 +28,8 @@ public class EmployeeRestController {
     @PostMapping(value = "/",
             consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
             produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
+
+    @ResponseStatus(CREATED)
 
     public Employee saveEmployee( @Valid @RequestBody Employee employee){
         return this.employeeService.saveEmployee(employee);
