@@ -1,12 +1,15 @@
 package com.bt.empmgmt.dao;
 
 import com.bt.empmgmt.model.Employee;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-
+@Component
+@Primary
 public class InMemoryEmployeeDAOImpl implements EmployeeDAO {
 
     private List<Employee> employeeList = Arrays.asList(

@@ -11,11 +11,10 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-@Repository("hibernateDAO")
-public class HibernateDAOImpl implements EmployeeDAO {
+//@Repository("hibernateDAO")
+public class HibernateDAOImpl{
 
-    @Autowired
-    private SessionFactory sessionFactory;
+    /*
 
     @Override
     public Employee saveEmployee(Employee employee) {
@@ -53,5 +52,5 @@ public class HibernateDAOImpl implements EmployeeDAO {
         Session session = sessionFactory.getCurrentSession();
         Employee employee = session.byId(Employee.class).load(id);
         session.delete(employee);
-    }
+    }*/
 }
