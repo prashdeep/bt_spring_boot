@@ -2,6 +2,7 @@ package com.bt.empmgmt.controller;
 
 import com.bt.empmgmt.model.Address;
 import com.bt.empmgmt.model.Employee;
+import com.bt.empmgmt.model.Project;
 import com.bt.empmgmt.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -37,6 +38,17 @@ public class EmployeeRestController {
         address.setCity("Bangalore");
         address.setState("KA");
         employee.addAddress(address);
+
+        Project project1 = new Project();
+        project1.setDeptName("Java");
+        project1.setLocation("Bangalore");
+        project1.addEmployee(employee);
+
+        Project project2 = new Project();
+        project2.setDeptName("Dotnet");
+        project2.setLocation("Chennai");
+        project2.addEmployee(employee);
+
         return this.employeeService.saveEmployee(employee);
     }
 

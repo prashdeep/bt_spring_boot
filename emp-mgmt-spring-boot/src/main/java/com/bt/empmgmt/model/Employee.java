@@ -1,7 +1,5 @@
 package com.bt.empmgmt.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import org.hibernate.validator.constraints.Range;
 
@@ -40,6 +38,13 @@ public class Employee implements Serializable, Comparable<Employee> {
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Address> address = new HashSet<>();
+
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "student_projects",
+                joinColumns = @JoinColumn(name="empId"),
+                inverseJoinColumns = @JoinColumn(name="project_id"))
+    private Set<Project> projects = new HashSet<>();
 
     @Override
     public int compareTo(Employee employee) {
