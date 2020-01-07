@@ -1,12 +1,16 @@
 package com.bt.empmgmt.model;
 
-import lombok.Builder;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "address")
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class Address {
 
     public Address(){}
@@ -24,5 +28,7 @@ public class Address {
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id", nullable = false, unique = true)
+    @JsonBackReference
     private Employee employee;
+
 }

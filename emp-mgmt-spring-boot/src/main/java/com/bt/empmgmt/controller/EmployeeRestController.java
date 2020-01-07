@@ -31,9 +31,8 @@ public class EmployeeRestController {
             produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
 
     @ResponseStatus(CREATED)
-
-    public Employee saveEmployee( @Valid @RequestBody Employee employee){
-
+    public Employee saveEmployee(  @RequestBody Employee employee){
+        System.out.println("++++++++++++++++++++++++++++");
         Address address  = new Address();
         address.setCity("Bangalore");
         address.setState("KA");
