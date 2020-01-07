@@ -11,17 +11,17 @@ import java.util.Optional;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private EmployeeRepository employeeDAO;
+    private EmployeeDAO employeeDAO;
 
 
 
-    public EmployeeServiceImpl(EmployeeRepository employeeDAO){
+    public EmployeeServiceImpl(EmployeeDAO employeeDAO){
         this.employeeDAO = employeeDAO;
     }
 
     @Override
     public Employee saveEmployee(Employee employee) {
-        return this.employeeDAO.save(employee);
+        return this.employeeDAO.saveEmployee(employee);
     }
 
     @Override
