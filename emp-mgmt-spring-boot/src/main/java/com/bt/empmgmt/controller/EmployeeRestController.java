@@ -1,5 +1,6 @@
 package com.bt.empmgmt.controller;
 
+import com.bt.empmgmt.model.Address;
 import com.bt.empmgmt.model.Employee;
 import com.bt.empmgmt.service.EmployeeService;
 import org.springframework.http.HttpStatus;
@@ -32,6 +33,11 @@ public class EmployeeRestController {
     @ResponseStatus(CREATED)
 
     public Employee saveEmployee( @Valid @RequestBody Employee employee){
+
+        Address address  = new Address();
+        address.setCity("Bangalore");
+        address.setState("KA");
+        employee.addAddress(address);
         return this.employeeService.saveEmployee(employee);
     }
 
