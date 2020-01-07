@@ -7,18 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fd8fd4-6d9e-40d8-bd41-4063cc767099" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/H2EmployeeDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/repository/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_app_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_app_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mvc-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/controller/EmployeeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/controller/EmployeeRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +32,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="15" />
           <entry key="JSP" value="1" />
           <entry key="SQL" value="2" />
           <entry key="XML" value="5" />
@@ -45,8 +41,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2080" />
-          <entry key="XML" value="625" />
+          <entry key="JAVA" value="2228" />
+          <entry key="XML" value="650" />
         </counts>
       </usages-collector>
     </session>
@@ -56,26 +52,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="53" column="18" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="2597">
+              <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/repository/EmployeeRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/model/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1652">
-              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="311">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -92,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="726">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="39" />
               <folding>
                 <element signature="e#382#383#0" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
@@ -120,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/H2EmployeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="429">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#518#519#0" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
@@ -137,32 +157,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#546#547#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/model/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -173,8 +172,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -198,18 +197,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmpService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/controller/EmpController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/controller/EmployeeRestController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/schema.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/H2EmployeeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bt/empmgmt/repository/EmployeeRepository.java" />
       </list>
     </option>
   </component>
@@ -319,7 +319,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578374669790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578376367836" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -462,12 +462,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578302271519</updated>
-      <workItem from="1578302273857" duration="11350000" />
+      <workItem from="1578302273857" duration="13045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11350000" />
+    <option name="totallyTimeSpent" value="13045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -608,16 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -628,7 +618,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -636,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="53" column="18" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="53" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -656,10 +639,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/stereotype/Repository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/H2EmployeeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/service/EmployeeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="726">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
@@ -673,32 +702,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/InMemoryEmployeeDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="297">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2597">
+          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1652">
-          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bt/empmgmt/dao/H2EmployeeDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="311">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
         </state>
       </provider>
     </entry>

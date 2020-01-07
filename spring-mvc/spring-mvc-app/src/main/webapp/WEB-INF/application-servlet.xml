@@ -31,11 +31,11 @@
         <property name="targetMethod" value="main" />
         <property name="arguments">
             <list>
-                <value>!--url</value>
+                <value_ _url</value>
                 <value>jdbc:h2:mem:emp_db</value>
-                <value>!--user</value>
+                <value>_ _user</value>
                 <value>sa</value>
-                <value>!--password</value>
+                <value>_ _password</value>
                 <value></value>
             </list>
         </property>
