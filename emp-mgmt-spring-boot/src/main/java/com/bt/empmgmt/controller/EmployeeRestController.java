@@ -33,7 +33,6 @@ public class EmployeeRestController {
 
     @ResponseStatus(CREATED)
     public Employee saveEmployee(  @RequestBody Employee employee){
-        System.out.println("++++++++++++++++++++++++++++");
         Address address  = new Address();
         address.setCity("Bangalore");
         address.setState("KA");
@@ -47,6 +46,7 @@ public class EmployeeRestController {
         Project project2 = new Project();
         project2.setDeptName("Dotnet");
         project2.setLocation("Chennai");
+
         project2.addEmployee(employee);
 
         return this.employeeService.saveEmployee(employee);

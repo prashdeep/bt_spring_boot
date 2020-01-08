@@ -41,7 +41,7 @@ public class Employee implements Serializable, Comparable<Employee> {
 
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "student_projects",
+    @JoinTable(name = "employee_projects",
                 joinColumns = @JoinColumn(name="empId"),
                 inverseJoinColumns = @JoinColumn(name="project_id"))
     private Set<Project> projects = new HashSet<>();
