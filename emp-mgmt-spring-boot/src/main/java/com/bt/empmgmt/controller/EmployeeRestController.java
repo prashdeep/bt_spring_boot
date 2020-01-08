@@ -6,6 +6,7 @@ import com.bt.empmgmt.model.Project;
 import com.bt.empmgmt.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +32,6 @@ public class EmployeeRestController {
             consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
             produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
 
-    @ResponseStatus(CREATED)
     public Employee saveEmployee(  @RequestBody Employee employee){
         Address address  = new Address();
         address.setCity("Bangalore");
@@ -48,13 +48,15 @@ public class EmployeeRestController {
         project2.setLocation("Chennai");
 
         project2.addEmployee(employee);
-
         return this.employeeService.saveEmployee(employee);
     }
 
     @GetMapping
-    public List<Employee> listAll(){
+    public List<Employee> listAll() throws Throwable {
         List<Employee> employeeList = this.employeeService.listAll();
+        if (true){
+            throw new IllegalArgumentException("Employees not found");
+        }
         return employeeList;
     }
 
@@ -77,5 +79,11 @@ public class EmployeeRestController {
 
     public Employee updateEmployee(@PathVariable("empId") long empId, @Valid @RequestBody Employee employee){
         return this.employeeService.updateEmployee(empId, employee);
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public String handlerIllegalUser(Exception exception){
+        System.out.println("Exception came inside the EmployeeRestController :: "+exception);
+        return "{message: IllegalArgumentException user";
     }
 }
