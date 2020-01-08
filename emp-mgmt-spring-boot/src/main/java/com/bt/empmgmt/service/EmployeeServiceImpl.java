@@ -1,17 +1,30 @@
 package com.bt.empmgmt.service;
 
+import com.bt.empmgmt.config.ApplicationConfiguration;
 import com.bt.empmgmt.dao.EmployeeDAO;
 import com.bt.empmgmt.model.Employee;
 import com.bt.empmgmt.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Primary
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeDAO employeeDAO;
+
+    @Autowired
+    private ApplicationConfiguration applicationConfiguration;
+
+
+    @Autowired
+    private ConfigurableApplicationContext applicationContext;
 
 
 
@@ -21,6 +34,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee saveEmployee(Employee employee) {
+
+        applicationContext.ge
+
+        System.out.println("Users ++++ _-==== " +applicationConfiguration.getNoOfUsers());
         return this.employeeDAO.saveEmployee(employee);
     }
 

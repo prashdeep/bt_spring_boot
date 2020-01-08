@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Primary
 public class EmployeeJPAService  implements  EmployeeService{
 
     private EmployeeRepository employeeRepository;
