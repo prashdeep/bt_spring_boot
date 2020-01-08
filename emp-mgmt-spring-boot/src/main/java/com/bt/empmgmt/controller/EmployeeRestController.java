@@ -54,9 +54,7 @@ public class EmployeeRestController {
     @GetMapping
     public List<Employee> listAll() throws Throwable {
         List<Employee> employeeList = this.employeeService.listAll();
-        if (true){
-            throw new IllegalArgumentException("Employees not found");
-        }
+
         return employeeList;
     }
 

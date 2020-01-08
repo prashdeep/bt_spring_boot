@@ -22,20 +22,14 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
-
-    @Autowired
-    private ConfigurableApplicationContext applicationContext;
-
-
-
-    public EmployeeServiceImpl(EmployeeDAO employeeDAO){
+   public EmployeeServiceImpl(EmployeeDAO employeeDAO){
         this.employeeDAO = employeeDAO;
     }
 
     @Override
     public Employee saveEmployee(Employee employee) {
 
-        applicationContext.ge
+
 
         System.out.println("Users ++++ _-==== " +applicationConfiguration.getNoOfUsers());
         return this.employeeDAO.saveEmployee(employee);
