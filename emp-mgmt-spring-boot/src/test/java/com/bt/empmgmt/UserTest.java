@@ -15,7 +15,7 @@ public class UserTest {
         User user = new User();
         Assert.assertNull(user.getPassword());
         Assert.assertNull(user.getRoles());
-        Assert.assertNull(user.getUserId());
+        Assert.assertEquals(user.getUserId(), 0);
         Assert.assertNull(user.getUserName());
 
     }
