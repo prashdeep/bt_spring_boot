@@ -22,7 +22,7 @@ public class DomainUserDetails implements UserDetails {
         this.password = user.getPassword();
         this.authorities = user.getRoles()
                                .stream()
-                               .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
+                               .map(role -> new SimpleGrantedAuthority("ROLE_" + role.getRole()))
                                .collect(Collectors.toList());
 
     }

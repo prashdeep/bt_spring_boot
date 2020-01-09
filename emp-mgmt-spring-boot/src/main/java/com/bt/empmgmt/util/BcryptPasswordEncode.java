@@ -14,6 +14,7 @@ public class BcryptPasswordEncode {
         System.out.println("Encoded password 1 "+ encodedPassword1);
         System.out.println("Encoded password 2 "+ encodedPassword2);
 
-        //System.out.println(passwordEncoder.matches("welcome", encodedPassword1));
+
+        System.out.println(passwordEncoder.matches("welcome", encodedPassword1));
     }
 }
